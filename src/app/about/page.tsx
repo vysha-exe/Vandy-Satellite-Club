@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { Reveal } from "@/components/Reveal";
 import { ButtonLink, PageHero, Section, SectionHeading } from "@/components/ui";
 
 export const metadata: Metadata = {
@@ -26,11 +27,13 @@ export default function AboutPage() {
       />
 
       <Section className="border-t border-line">
-        <SectionHeading
-          eyebrow="Areas of work"
-          title="Where the club focuses."
-          description="Workstreams grow with active projects. MOSAIC currently anchors the public technical record."
-        />
+        <Reveal>
+          <SectionHeading
+            eyebrow="Areas of work"
+            title="Where the club focuses."
+            description="Workstreams grow with active projects. MOSAIC currently anchors the public technical record."
+          />
+        </Reveal>
         <div className="grid gap-8 md:grid-cols-2">
           {[
             {
@@ -49,26 +52,25 @@ export default function AboutPage() {
               title: "Electrical systems & data",
               text: "Power conditioning, bus design, logging, telemetry, and post-flight analysis pipelines.",
             },
-          ].map((item) => (
-            <article key={item.title} className="border-t border-line pt-5">
-              <h3 className="text-xl font-bold text-ink">{item.title}</h3>
-              <p className="mt-3 text-muted">{item.text}</p>
-            </article>
+          ].map((item, i) => (
+            <Reveal key={item.title} delay={(i % 2) * 80}>
+              <article className="border-t border-line pt-5">
+                <h3 className="text-xl font-bold text-ink">{item.title}</h3>
+                <p className="mt-3 text-muted">{item.text}</p>
+              </article>
+            </Reveal>
           ))}
         </div>
       </Section>
 
       <Section className="border-t border-line bg-surface-soft/50">
-        <SectionHeading
-          eyebrow="Organizational context"
-          title="Credible, updateable, student-owned."
-          description="Content on this site prioritizes accuracy over marketing language. Proposal material is treated as planned work until the club confirms milestones."
-        />
-        <ul className="max-w-3xl space-y-3 text-muted">
-          <li>• Public claims require verified updates or sourced proposal language.</li>
-          <li>• Personal contact details from applications are not published.</li>
-          <li>• Team listings distinguish proposal roster entries from confirmed members.</li>
-        </ul>
+        <Reveal>
+          <SectionHeading
+            eyebrow="How we publish"
+            title="Accuracy over marketing."
+            description="Public claims require verified updates or sourced proposal language. Personal contact details from applications are not published."
+          />
+        </Reveal>
       </Section>
     </>
   );

@@ -82,9 +82,9 @@ export function ButtonLink({
 }) {
   const styles =
     variant === "primary"
-      ? "bg-ink text-white hover:bg-brand-deep"
+      ? "bg-[#07111f] text-[#ffffff] hover:bg-[#0c2466]"
       : variant === "secondary"
-        ? "border border-line bg-white text-ink hover:border-brand/40 hover:bg-brand-soft"
+        ? "border border-line bg-white text-[#07111f] hover:border-brand/40 hover:bg-brand-soft"
         : "text-brand hover:text-brand-deep";
 
   const className = `inline-flex items-center justify-center rounded-full px-5 py-2.5 text-sm font-semibold transition-colors ${styles}`;

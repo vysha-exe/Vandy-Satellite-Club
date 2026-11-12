@@ -5,9 +5,9 @@ export const site = {
   description:
     "Explore our projects, meet the team, and follow the engineering behind our high-altitude experiments.",
   instagram: "https://www.instagram.com/vandysatelliteclub/?hl=en",
-  joinContactPlaceholder: "mailto:vusat-join@example.com",
+  joinContact: "https://www.instagram.com/vandysatelliteclub/?hl=en",
   joinNote:
-    "Recruitment contact is a placeholder until the club publishes a verified email or form.",
+    "Reach out through Instagram while the club confirms a dedicated recruitment contact.",
 } as const;
 
 export const nav = [

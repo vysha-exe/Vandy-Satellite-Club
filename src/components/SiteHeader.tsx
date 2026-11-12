@@ -105,7 +105,7 @@ export function SiteHeader() {
               onClick={() => setOpen(false)}
               className="rounded-2xl px-4 py-3 text-sm font-semibold text-brand"
             >
-              Instagram →
+              Instagram
             </Link>
           </nav>
         </div>

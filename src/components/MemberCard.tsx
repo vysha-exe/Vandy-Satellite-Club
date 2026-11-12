@@ -39,20 +39,11 @@ export function MemberCard({ member }: { member: TeamMember }) {
               rel="noopener noreferrer"
               className="mt-3 inline-flex text-sm font-semibold text-brand hover:text-brand-deep"
             >
-              Profile →
+              Profile
             </a>
           ) : null}
         </div>
       </div>
-    </article>
-  );
-}
-
-export function MemberSlot({ label, hint }: { label: string; hint: string }) {
-  return (
-    <article className="flex min-h-[132px] flex-col justify-center rounded-2xl border border-dashed border-line bg-surface-soft/50 px-5 py-6">
-      <p className="text-sm font-bold text-ink">{label}</p>
-      <p className="mt-2 text-sm text-muted">{hint}</p>
     </article>
   );
 }

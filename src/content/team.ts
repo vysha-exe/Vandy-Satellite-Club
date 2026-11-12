@@ -72,13 +72,6 @@ export const teamMembers: TeamMember[] = [
   },
 ];
 
-/** Empty slots reserved for additional confirmed club members. */
-export const memberPlaceholders = Array.from({ length: 8 }, (_, i) => ({
-  id: `member-slot-${i + 1}`,
-  label: "Open member slot",
-  hint: "Add name, role, and photo in src/content/team.ts",
-}));
-
 export const teamGroups = [
   {
     id: "leadership",

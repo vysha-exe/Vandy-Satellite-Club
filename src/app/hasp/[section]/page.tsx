@@ -59,14 +59,14 @@ export default async function HaspSectionPage({ params }: Props) {
       >
         {prev ? (
           <Link href={prev.href} className="text-sm font-semibold text-brand">
-            ← {prev.title}
+            Previous: {prev.title}
           </Link>
         ) : (
           <span />
         )}
         {next ? (
           <Link href={next.href} className="text-sm font-semibold text-brand sm:text-right">
-            {next.title} →
+            Next: {next.title}
           </Link>
         ) : null}
       </nav>

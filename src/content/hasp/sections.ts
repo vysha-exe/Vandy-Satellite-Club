@@ -109,7 +109,7 @@ export const haspSections: Record<string, HaspSection> = {
       {
         type: "status",
         label: "Results",
-        value: "Awaiting test data — no fabricated measurements shown",
+        value: "Ground and flight metrics will appear here after testing",
       },
     ],
   },
@@ -266,11 +266,6 @@ export const haspSections: Record<string, HaspSection> = {
       {
         type: "p",
         text: "The proposal reports approximately 1,222 g total (1,055 g mechanical + 167 g electronics), with approximately ±109 g stated uncertainty. These are preliminary estimates, not measured final mass.",
-      },
-      {
-        type: "status",
-        label: "Drawings",
-        value: "Placeholder gallery — add exported proposal figures under public/images/hasp/",
       },
     ],
   },
@@ -500,20 +495,19 @@ export const haspSections: Record<string, HaspSection> = {
     blocks: [
       {
         type: "callout",
-        title: "No public updates yet",
-        text: "When the club publishes a dated update, add it in src/content/hasp/updates.ts. Until then this feed stays empty rather than inventing progress.",
+        title: "Development log",
+        text: "Dated engineering updates will appear here as the team publishes verified progress.",
       },
     ],
   },
   resources: {
     slug: "resources",
     title: "Resources & references",
-    description:
-      "Figure slots, citations, and download placeholders for approved materials.",
+    description: "Proposal figure references and citations for MOSAIC.",
     blocks: [
       {
         type: "h2",
-        text: "Figure slots",
+        text: "Proposal figures",
       },
       {
         type: "ul",
@@ -528,7 +522,7 @@ export const haspSections: Record<string, HaspSection> = {
       },
       {
         type: "p",
-        text: "Place exported images in public/images/hasp/ with captions and source page numbers. Do not publish the original proposal or detailed schematics without club approval.",
+        text: "Approved drawings and exports will be linked here when the club authorizes public release.",
       },
       {
         type: "h2",

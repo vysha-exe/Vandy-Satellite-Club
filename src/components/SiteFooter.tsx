@@ -20,7 +20,7 @@ export function SiteFooter() {
                   href={item.href}
                   className="text-sm font-medium text-muted transition-colors hover:text-brand"
                 >
-                  {item.label} →
+                  {item.label}
                 </Link>
               </li>
             ))}
@@ -37,7 +37,7 @@ export function SiteFooter() {
                 rel="noopener noreferrer"
                 className="text-sm font-medium text-muted transition-colors hover:text-brand"
               >
-                Instagram →
+                Instagram
               </a>
             </li>
             <li>
@@ -45,7 +45,7 @@ export function SiteFooter() {
                 href="/join"
                 className="text-sm font-medium text-muted transition-colors hover:text-brand"
               >
-                Get Involved →
+                Get Involved
               </Link>
             </li>
             <li>
@@ -53,7 +53,7 @@ export function SiteFooter() {
                 href="/hasp"
                 className="text-sm font-medium text-muted transition-colors hover:text-brand"
               >
-                MOSAIC documentation →
+                MOSAIC documentation
               </Link>
             </li>
           </ul>

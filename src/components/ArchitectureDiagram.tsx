@@ -92,7 +92,7 @@ export function ArchitectureDiagram() {
         <path d="M380 196 V214 H624 V236" fill="none" stroke="#12358a" strokeWidth="1.5" markerEnd="url(#arrow)" />
 
         {[
-          { y: 344, label: "Timestamped acquisition → onboard microSD storage" },
+          { y: 344, label: "Timestamped acquisition · onboard microSD storage" },
           { y: 408, label: "Post-recovery processing · four estimator configs" },
           { y: 472, label: "Error, drift, and reliability analysis" },
         ].map((node) => (
