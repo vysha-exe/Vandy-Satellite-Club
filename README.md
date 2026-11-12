@@ -53,7 +53,7 @@ $env:GITHUB_PAGES="true"; npm run build
 | `/team` | Members, proposal roster, open slots |
 | `/join` | Recruitment / contact placeholder |
 
-Instagram: [vandysatelliteclub](https://www.instagram.com/vandysatelliteclub/?hl=en)
+Instagram: [vandysatellite](https://www.instagram.com/vandysatellite/?hl=en)
 
 ## Edit content
 
