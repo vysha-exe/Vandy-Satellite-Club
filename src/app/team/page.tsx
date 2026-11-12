@@ -28,13 +28,6 @@ export default function TeamPage() {
       />
 
       <Section className="border-t border-line pt-10">
-        <Reveal>
-          <div className="mb-10 rounded-3xl border border-gold/25 bg-gold-soft/60 px-5 py-4 text-sm text-ink-soft">
-            Names below are from the November 2026 HASP proposal roster and will expand as the club
-            confirms additional members.
-          </div>
-        </Reveal>
-
         {teamGroups.map((group, groupIndex) => {
           const members = teamMembers.filter((m) => m.group === group.id);
           if (!members.length) return null;
