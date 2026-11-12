@@ -1,10 +1,11 @@
 "use client";
 
-import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
 import { nav, site } from "@/content/site";
+
+const logoSrc = `${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}/images/vusat-logo.png`;
 
 export function SiteHeader() {
   const pathname = usePathname();
@@ -21,13 +22,13 @@ export function SiteHeader() {
           className="flex items-center gap-2.5 rounded-full pl-1 pr-2 py-1"
           aria-label={`${site.name} home`}
         >
-          <Image
-            src={`${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}/images/vusat-logo.png`}
+          {/* Plain img: next/image was dropping basePath on GitHub Pages */}
+          <img
+            src={logoSrc}
             alt="VUSAT logo"
             width={36}
             height={36}
             className="h-9 w-9 rounded-full object-cover"
-            priority
           />
           <span className="hidden text-[0.78rem] font-extrabold tracking-[0.18em] text-ink sm:inline">
             {site.shortName}
