@@ -61,9 +61,8 @@ export function SiteFooter() {
       </div>
 
       <div className="border-t border-line">
-        <div className="mx-auto flex max-w-6xl flex-col gap-2 px-6 py-5 text-xs text-muted sm:flex-row sm:items-center sm:justify-between">
+        <div className="mx-auto flex max-w-6xl px-6 py-5 text-xs text-muted">
           <p>© 2026 {site.name}. Student organization at Vanderbilt University.</p>
-          <p>Not an official university endorsement. Content marked proposed until verified.</p>
         </div>
       </div>
     </footer>
