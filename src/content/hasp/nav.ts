@@ -1,0 +1,30 @@
+export const haspNav = [
+  { slug: "", title: "Overview", href: "/hasp" },
+  { slug: "science", title: "Science", href: "/hasp/science" },
+  { slug: "objectives", title: "Objectives", href: "/hasp/objectives" },
+  { slug: "architecture", title: "Architecture", href: "/hasp/architecture" },
+  { slug: "hardware", title: "Hardware", href: "/hasp/hardware" },
+  { slug: "mechanical", title: "Mechanical", href: "/hasp/mechanical" },
+  { slug: "electrical", title: "Electrical", href: "/hasp/electrical" },
+  { slug: "thermal", title: "Thermal", href: "/hasp/thermal" },
+  { slug: "software", title: "Software", href: "/hasp/software" },
+  { slug: "testing", title: "Testing", href: "/hasp/testing" },
+  { slug: "timeline", title: "Timeline", href: "/hasp/timeline" },
+  { slug: "updates", title: "Updates", href: "/hasp/updates" },
+  { slug: "resources", title: "Resources", href: "/hasp/resources" },
+] as const;
+
+export const mosaicMeta = {
+  name: "MOSAIC",
+  fullName: "Multisensor Orientation Sensing and Attitude Inference Comparison",
+  eyebrow: "HASP · 2027 Payload Proposal",
+  institution: "Vanderbilt University",
+  team: "Vanderbilt Satellite Team (VUSAT)",
+  platform: "High-Altitude Student Platform (HASP)",
+  proposalYear: "2027",
+  payloadClass: "Small",
+  submitted: "November 8, 2026",
+  flightStatus: "Proposed; acceptance and flight not established",
+  floatAltitude: "≈ 36 km",
+  floatDuration: "≥ 10 hours (target)",
+} as const;

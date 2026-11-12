@@ -1,0 +1,171 @@
+@import "tailwindcss";
+
+:root {
+  --ink: #07111f;
+  --ink-soft: #1a2436;
+  --brand: #12358a;
+  --brand-deep: #0c2466;
+  --brand-soft: #e8eefc;
+  --gold: #b8923a;
+  --gold-soft: #f7f1e3;
+  --muted: #5b6b7c;
+  --line: #e4e9f1;
+  --surface: #ffffff;
+  --surface-soft: #f5f7fb;
+  --surface-tint: #eef3fb;
+  --background: #ffffff;
+  --foreground: #07111f;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-ink: var(--ink);
+  --color-ink-soft: var(--ink-soft);
+  --color-brand: var(--brand);
+  --color-brand-deep: var(--brand-deep);
+  --color-brand-soft: var(--brand-soft);
+  --color-gold: var(--gold);
+  --color-gold-soft: var(--gold-soft);
+  --color-muted: var(--muted);
+  --color-line: var(--line);
+  --color-surface: var(--surface);
+  --color-surface-soft: var(--surface-soft);
+  --color-surface-tint: var(--surface-tint);
+  --font-sans: var(--font-plus-jakarta);
+  --font-mono: var(--font-ibm-plex-mono);
+  --font-display: var(--font-manrope);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-plus-jakarta), system-ui, sans-serif;
+  line-height: 1.6;
+}
+
+::selection {
+  background: color-mix(in srgb, var(--brand) 18%, white);
+  color: var(--ink);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+:focus-visible {
+  outline: 2px solid var(--brand);
+  outline-offset: 3px;
+}
+
+.grid-atmosphere {
+  background-color: #f7f9fc;
+  background-image:
+    radial-gradient(ellipse 80% 50% at 50% -10%, rgba(18, 53, 138, 0.08), transparent 55%),
+    linear-gradient(rgba(18, 53, 138, 0.045) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(18, 53, 138, 0.045) 1px, transparent 1px);
+  background-size: auto, 48px 48px, 48px 48px;
+}
+
+.display-title {
+  font-family: var(--font-manrope), var(--font-plus-jakarta), system-ui, sans-serif;
+  letter-spacing: -0.035em;
+  line-height: 1.05;
+}
+
+.font-display {
+  font-family: var(--font-manrope), var(--font-plus-jakarta), system-ui, sans-serif;
+}
+
+.eyebrow {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--brand);
+}
+
+.prose-doc h2 {
+  font-family: var(--font-manrope), var(--font-plus-jakarta), system-ui, sans-serif;
+  font-size: clamp(1.5rem, 2.4vw, 1.9rem);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: var(--ink);
+  margin: 2.5rem 0 0.85rem;
+}
+
+.prose-doc h3 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--ink);
+  margin: 1.75rem 0 0.6rem;
+}
+
+.prose-doc p,
+.prose-doc li {
+  color: var(--muted);
+  font-size: 1.02rem;
+  line-height: 1.75;
+}
+
+.prose-doc p {
+  margin: 0 0 1rem;
+}
+
+.prose-doc ul {
+  margin: 0 0 1.25rem;
+  padding-left: 1.2rem;
+}
+
+.prose-doc li {
+  margin-bottom: 0.45rem;
+}
+
+.prose-doc strong {
+  color: var(--ink-soft);
+  font-weight: 600;
+}
+
+@keyframes rise-in {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-rise {
+  animation: rise-in 0.7s ease-out both;
+}
+
+.animate-rise-delay {
+  animation: rise-in 0.7s ease-out 0.12s both;
+}
+
+.animate-rise-delay-2 {
+  animation: rise-in 0.7s ease-out 0.24s both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .animate-rise,
+  .animate-rise-delay,
+  .animate-rise-delay-2 {
+    animation: none;
+  }
+}
