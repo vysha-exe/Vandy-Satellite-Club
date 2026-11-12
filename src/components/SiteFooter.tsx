@@ -42,14 +42,6 @@ export function SiteFooter() {
             </li>
             <li>
               <Link
-                href="/join"
-                className="text-sm font-medium text-muted transition-colors hover:text-brand"
-              >
-                Get Involved
-              </Link>
-            </li>
-            <li>
-              <Link
                 href="/hasp"
                 className="text-sm font-medium text-muted transition-colors hover:text-brand"
               >
