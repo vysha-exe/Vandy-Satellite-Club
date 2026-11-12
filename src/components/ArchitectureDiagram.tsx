@@ -7,20 +7,6 @@ export function ArchitectureDiagram() {
         aria-label="MOSAIC system architecture from HASP power through sensing, recording, downlink, and post-flight estimation"
         className="mx-auto h-auto w-full min-w-[640px] max-w-3xl"
       >
-        <defs>
-          <marker
-            id="arrow"
-            viewBox="0 0 10 10"
-            refX="8"
-            refY="5"
-            markerWidth="6"
-            markerHeight="6"
-            orient="auto-start-reverse"
-          >
-            <path d="M 0 0 L 10 5 L 0 10 z" fill="#12358a" />
-          </marker>
-        </defs>
-
         {[
           { y: 24, label: "HASP supplied power (26–30 VDC)" },
           { y: 88, label: "Power conditioning" },
@@ -50,8 +36,8 @@ export function ArchitectureDiagram() {
           </g>
         ))}
 
-        <line x1="380" y1="68" x2="380" y2="88" stroke="#12358a" strokeWidth="1.5" markerEnd="url(#arrow)" />
-        <line x1="380" y1="132" x2="380" y2="152" stroke="#12358a" strokeWidth="1.5" markerEnd="url(#arrow)" />
+        <line x1="380" y1="68" x2="380" y2="88" stroke="#12358a" strokeWidth="1.5" />
+        <line x1="380" y1="132" x2="380" y2="152" stroke="#12358a" strokeWidth="1.5" />
 
         {[
           { x: 24, title: "Inertial / magnetic", body: "Gyros, accelerometers,\nmagnetometer" },
@@ -87,9 +73,9 @@ export function ArchitectureDiagram() {
           </g>
         ))}
 
-        <path d="M380 196 V214 H136 V236" fill="none" stroke="#12358a" strokeWidth="1.5" markerEnd="url(#arrow)" />
-        <path d="M380 196 V236" fill="none" stroke="#12358a" strokeWidth="1.5" markerEnd="url(#arrow)" />
-        <path d="M380 196 V214 H624 V236" fill="none" stroke="#12358a" strokeWidth="1.5" markerEnd="url(#arrow)" />
+        <path d="M380 196 V214 H136 V236" fill="none" stroke="#12358a" strokeWidth="1.5" />
+        <path d="M380 196 V236" fill="none" stroke="#12358a" strokeWidth="1.5" />
+        <path d="M380 196 V214 H624 V236" fill="none" stroke="#12358a" strokeWidth="1.5" />
 
         {[
           { y: 344, label: "Timestamped acquisition · onboard microSD storage" },
@@ -124,15 +110,15 @@ export function ArchitectureDiagram() {
         <line x1="380" y1="314" x2="380" y2="330" stroke="#12358a" strokeWidth="1.5" />
         <line x1="624" y1="314" x2="624" y2="330" stroke="#12358a" strokeWidth="1.5" />
         <line x1="136" y1="330" x2="624" y2="330" stroke="#12358a" strokeWidth="1.5" />
-        <line x1="380" y1="330" x2="380" y2="344" stroke="#12358a" strokeWidth="1.5" markerEnd="url(#arrow)" />
-        <line x1="380" y1="384" x2="380" y2="408" stroke="#12358a" strokeWidth="1.5" markerEnd="url(#arrow)" />
-        <line x1="380" y1="448" x2="380" y2="472" stroke="#12358a" strokeWidth="1.5" markerEnd="url(#arrow)" />
+        <line x1="380" y1="330" x2="380" y2="344" stroke="#12358a" strokeWidth="1.5" />
+        <line x1="380" y1="384" x2="380" y2="408" stroke="#12358a" strokeWidth="1.5" />
+        <line x1="380" y1="448" x2="380" y2="472" stroke="#12358a" strokeWidth="1.5" />
 
         <rect x="560" y="152" width="176" height="44" rx="12" fill="#f7f1e3" stroke="#b8923a" strokeWidth="1.25" />
         <text x="648" y="178" textAnchor="middle" fontSize="11.5" fill="#07111f">
           HASP RS-232 status
         </text>
-        <line x1="550" y1="174" x2="560" y2="174" stroke="#b8923a" strokeWidth="1.5" markerEnd="url(#arrow)" />
+        <line x1="550" y1="174" x2="560" y2="174" stroke="#b8923a" strokeWidth="1.5" />
       </svg>
       <figcaption className="mt-4 text-sm text-muted">
         Conceptual architecture distinguishing onboard recording from post-flight estimation, with a separate
