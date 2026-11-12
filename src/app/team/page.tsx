@@ -35,7 +35,6 @@ export default function TeamPage() {
             <Reveal key={group.id} delay={groupIndex * 60}>
               <div className="mb-14">
                 <SectionHeading
-                  eyebrow="Roster"
                   title={group.title}
                   description={group.description}
                 />

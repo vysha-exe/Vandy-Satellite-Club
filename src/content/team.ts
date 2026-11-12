@@ -22,8 +22,7 @@ export const teamMembers: TeamMember[] = [
     role: "Project Manager; Mechanical Sublead",
     discipline: "Mechanical",
     group: "leadership",
-    status: "proposal-roster",
-    note: "Listed on the November 2026 HASP proposal roster.",
+    status: "confirmed",
   },
   {
     id: "leandro-avelar",
@@ -31,8 +30,7 @@ export const teamMembers: TeamMember[] = [
     role: "Mechanical Lead",
     discipline: "Mechanical",
     group: "leadership",
-    status: "proposal-roster",
-    note: "Listed on the November 2026 HASP proposal roster.",
+    status: "confirmed",
   },
   {
     id: "taisei-tagami",
@@ -40,8 +38,7 @@ export const teamMembers: TeamMember[] = [
     role: "Electrical Lead",
     discipline: "Electrical",
     group: "leadership",
-    status: "proposal-roster",
-    note: "Listed on the November 2026 HASP proposal roster.",
+    status: "confirmed",
   },
   {
     id: "gavin-gemski",
@@ -49,8 +46,7 @@ export const teamMembers: TeamMember[] = [
     role: "Mechanical System Integration",
     discipline: "Mechanical",
     group: "members",
-    status: "proposal-roster",
-    note: "Listed on the November 2026 HASP proposal roster.",
+    status: "confirmed",
   },
   {
     id: "cristian-diaz",
@@ -58,8 +54,7 @@ export const teamMembers: TeamMember[] = [
     role: "Mechanical Sublead; Thermal Analysis",
     discipline: "Mechanical / Thermal",
     group: "members",
-    status: "proposal-roster",
-    note: "Listed on the November 2026 HASP proposal roster.",
+    status: "confirmed",
   },
   {
     id: "brian-sierawski",
@@ -67,8 +62,7 @@ export const teamMembers: TeamMember[] = [
     role: "Faculty Advisor",
     discipline: "Faculty",
     group: "advisors",
-    status: "proposal-roster",
-    note: "Listed on the November 2026 HASP proposal roster.",
+    status: "confirmed",
   },
 ];
 
@@ -76,7 +70,7 @@ export const teamGroups = [
   {
     id: "leadership",
     title: "Project leadership",
-    description: "Leads listed on the MOSAIC / HASP proposal application.",
+    description: "Leads guiding MOSAIC and club engineering work.",
   },
   {
     id: "members",

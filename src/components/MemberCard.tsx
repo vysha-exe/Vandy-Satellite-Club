@@ -17,21 +17,13 @@ export function MemberCard({ member }: { member: TeamMember }) {
           {initials}
         </div>
         <div className="min-w-0 flex-1">
-          <div className="flex flex-wrap items-center gap-2">
-            <h3 className="text-lg font-bold tracking-tight text-ink">{member.name}</h3>
-            {member.status === "proposal-roster" ? (
-              <span className="rounded-full bg-surface-tint px-2.5 py-0.5 font-mono text-[0.65rem] font-semibold uppercase tracking-wide text-muted">
-                Proposal roster
-              </span>
-            ) : null}
-          </div>
+          <h3 className="text-lg font-bold tracking-tight text-ink">{member.name}</h3>
           <p className="mt-1 text-sm font-medium text-brand">{member.role}</p>
           {member.discipline ? (
             <p className="mt-1 font-mono text-xs uppercase tracking-[0.08em] text-muted">
               {member.discipline}
             </p>
           ) : null}
-          {member.note ? <p className="mt-2 text-sm text-muted">{member.note}</p> : null}
           {member.profileUrl ? (
             <a
               href={member.profileUrl}
