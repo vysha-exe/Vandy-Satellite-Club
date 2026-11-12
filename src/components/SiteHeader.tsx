@@ -22,7 +22,7 @@ export function SiteHeader() {
           aria-label={`${site.name} home`}
         >
           <Image
-            src="/images/vusat-logo.png"
+            src={`${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}/images/vusat-logo.png`}
             alt="VUSAT logo"
             width={36}
             height={36}
