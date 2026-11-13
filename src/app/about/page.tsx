@@ -5,7 +5,7 @@ import { ButtonLink, PageHero, Section, SectionHeading } from "@/components/ui";
 export const metadata: Metadata = {
   title: "About",
   description:
-    "Overview of Vanderbilt Satellite Club — student-led aerospace engineering and research at Vanderbilt University.",
+    "Overview of Vanderbilt Satellite Team — student-led aerospace engineering and research at Vanderbilt University.",
 };
 
 export default function AboutPage() {
@@ -14,11 +14,11 @@ export default function AboutPage() {
       <PageHero
         eyebrow="About · VUSAT"
         title="A student engineering"
-        accent="club."
-        description="Vanderbilt Satellite Club is a student-led community focused on aerospace instrumentation, experimentation, and collaborative engineering. This site documents verified work and clearly marks proposed plans."
+        accent="team."
+        description="Vanderbilt Satellite Team is a student-led community focused on aerospace instrumentation, experimentation, and collaborative engineering. This site documents verified work and clearly marks proposed plans."
         actions={
           <>
-            <ButtonLink href="/team">Meet the Club</ButtonLink>
+            <ButtonLink href="/team">Meet the Team</ButtonLink>
             <ButtonLink href="/hasp" variant="secondary">
               Explore MOSAIC
             </ButtonLink>
@@ -30,7 +30,7 @@ export default function AboutPage() {
         <Reveal>
           <SectionHeading
             eyebrow="Areas of work"
-            title="Where the club focuses."
+            title="Where the team focuses."
             description="Workstreams grow with active projects. MOSAIC currently anchors the public technical record."
           />
         </Reveal>

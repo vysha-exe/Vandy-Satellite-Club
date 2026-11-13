@@ -6,17 +6,17 @@ import { teamGroups, teamMembers } from "@/content/team";
 
 export const metadata: Metadata = {
   title: "Team",
-  description: "Vanderbilt Satellite Club members, leads, and advisors.",
+  description: "Vanderbilt Satellite Team members, leads, and advisors.",
 };
 
 export default function TeamPage() {
   return (
     <>
       <PageHero
-        eyebrow="Team · Club members"
+        eyebrow="Team · Members"
         title="People behind"
         accent="the work."
-        description="Project leads, contributors, and advisors supporting Vanderbilt Satellite Club engineering."
+        description="Project leads, contributors, and advisors supporting Vanderbilt Satellite Team engineering."
         actions={
           <>
             <ButtonLink href="/join">Get Involved</ButtonLink>

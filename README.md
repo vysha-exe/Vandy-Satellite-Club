@@ -1,6 +1,6 @@
-# Vanderbilt Satellite Club (VUSAT)
+# Vanderbilt Satellite Team (VUSAT)
 
-Official-feeling public website for Vanderbilt Satellite Club, with a detailed HASP documentation hub for **MOSAIC**.
+Official-feeling public website for Vanderbilt Satellite Team, with a detailed HASP documentation hub for **MOSAIC**.
 
 ## Stack
 

@@ -14,7 +14,7 @@ export default function HomePage() {
           <p className="eyebrow animate-rise">{site.shortName} · Vanderbilt University</p>
           <h1 className="display-title mt-5 max-w-4xl text-[clamp(2.8rem,8vw,5.2rem)] text-ink animate-rise">
             Vanderbilt
-            <span className="text-brand"> Satellite Club</span>
+            <span className="text-brand"> Satellite Team</span>
           </h1>
           <p className="mt-6 max-w-xl text-lg leading-relaxed text-muted animate-rise-delay">
             {site.description}
@@ -75,7 +75,7 @@ export default function HomePage() {
           <SectionHeading
             eyebrow="What we do"
             title="Engineering first. Claims only when verified."
-            description="Satellite-related instrumentation, experimentation, and collaboration for Vanderbilt students — without inventing projects the club has not documented."
+            description="Satellite-related instrumentation, experimentation, and collaboration for Vanderbilt students — without inventing projects the team has not documented."
           />
         </Reveal>
         <div className="grid gap-6 md:grid-cols-3">
@@ -115,13 +115,13 @@ export default function HomePage() {
           {[
             { href: "/projects", label: "Projects", note: "Current and planned engineering work" },
             { href: "/hasp", label: "HASP / MOSAIC", note: "Full technical documentation hub" },
-            { href: "/team", label: "Club members", note: "Leads, contributors, and advisors" },
-            { href: "/join", label: "Get Involved", note: "Join or follow the club" },
-            { href: "/about", label: "About", note: "Club overview and areas of work" },
+            { href: "/team", label: "Team members", note: "Leads, contributors, and advisors" },
+            { href: "/join", label: "Get Involved", note: "Join or follow the team" },
+            { href: "/about", label: "About", note: "Team overview and areas of work" },
             {
               href: site.instagram,
               label: "Instagram",
-              note: "Official club updates",
+              note: "Official team updates",
               external: true,
             },
           ].map((item, i) =>
@@ -162,12 +162,12 @@ export default function HomePage() {
             <SectionHeading
               eyebrow="Join the team"
               title="Build with VUSAT."
-              description="Interested in aerospace hardware, sensing, or flight experiments? Meet the club and follow along."
+              description="Interested in aerospace hardware, sensing, or flight experiments? Meet the team and follow along."
             />
             <div className="flex flex-wrap gap-3 lg:justify-end">
               <ButtonLink href="/join">Get Involved</ButtonLink>
               <ButtonLink href="/team" variant="secondary">
-                Meet the Club
+                Meet the Team
               </ButtonLink>
             </div>
           </div>

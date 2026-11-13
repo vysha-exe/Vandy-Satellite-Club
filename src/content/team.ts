@@ -49,6 +49,14 @@ export const teamMembers: TeamMember[] = [
     status: "confirmed",
   },
   {
+    id: "ishita-patel",
+    name: "Ishita Patel",
+    role: "Mechanical System Integration",
+    discipline: "Mechanical",
+    group: "members",
+    status: "confirmed",
+  },
+  {
     id: "cristian-diaz",
     name: "Cristian Diaz",
     role: "Mechanical Sublead; Thermal Analysis",
@@ -70,7 +78,7 @@ export const teamGroups = [
   {
     id: "leadership",
     title: "Project leadership",
-    description: "Leads guiding MOSAIC and club engineering work.",
+    description: "Leads guiding MOSAIC and team engineering work.",
   },
   {
     id: "members",
@@ -80,6 +88,6 @@ export const teamGroups = [
   {
     id: "advisors",
     title: "Advisors",
-    description: "Faculty guidance for the club’s engineering and research work.",
+    description: "Faculty guidance for the team’s engineering and research work.",
   },
 ] as const;

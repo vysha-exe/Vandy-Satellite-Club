@@ -1,5 +1,5 @@
 export const site = {
-  name: "Vanderbilt Satellite Club",
+  name: "Vanderbilt Satellite Team",
   shortName: "VUSAT",
   tagline: "Student-led aerospace engineering and research at Vanderbilt University.",
   description:
@@ -7,7 +7,7 @@ export const site = {
   instagram: "https://www.instagram.com/vandysatellite/?hl=en",
   joinContact: "https://www.instagram.com/vandysatellite/?hl=en",
   joinNote:
-    "Reach out through Instagram while the club confirms a dedicated recruitment contact.",
+    "Reach out through Instagram while the team confirms a dedicated recruitment contact.",
 } as const;
 
 export const nav = [

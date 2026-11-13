@@ -6,7 +6,7 @@ import { ButtonLink, PageHero, Section, SectionHeading } from "@/components/ui";
 
 export const metadata: Metadata = {
   title: "Get Involved",
-  description: "How to join or follow Vanderbilt Satellite Club.",
+  description: "How to join or follow Vanderbilt Satellite Team.",
 };
 
 export default function JoinPage() {
@@ -16,14 +16,14 @@ export default function JoinPage() {
         eyebrow="Get Involved"
         title="Build with"
         accent="VUSAT."
-        description="Prospective members, collaborators, and supporters can follow the club’s public work and connect through Instagram."
+        description="Prospective members, collaborators, and supporters can follow the team’s public work and connect through Instagram."
         actions={
           <>
             <ButtonLink href={site.joinContact} external>
               Follow on Instagram
             </ButtonLink>
             <ButtonLink href="/team" variant="secondary">
-              Meet the Club
+              Meet the Team
             </ButtonLink>
           </>
         }
@@ -46,14 +46,14 @@ export default function JoinPage() {
               label: "HASP docs",
             },
             {
-              title: "Meet the club",
+              title: "Meet the team",
               text: "See project leadership and contributors on the team page.",
               href: "/team",
               label: "Team",
             },
             {
               title: "Follow updates",
-              text: "Official Instagram is the current public channel for club activity.",
+              text: "Official Instagram is the current public channel for team activity.",
               href: site.instagram,
               label: "Instagram",
               external: true,

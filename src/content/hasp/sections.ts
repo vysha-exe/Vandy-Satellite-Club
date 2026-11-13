@@ -522,7 +522,7 @@ export const haspSections: Record<string, HaspSection> = {
       },
       {
         type: "p",
-        text: "Approved drawings and exports will be linked here when the club authorizes public release.",
+        text: "Approved drawings and exports will be linked here when the team authorizes public release.",
       },
       {
         type: "h2",

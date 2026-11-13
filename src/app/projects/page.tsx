@@ -6,7 +6,7 @@ import { PageHero, Section, StatusLabel } from "@/components/ui";
 
 export const metadata: Metadata = {
   title: "Projects",
-  description: "Project directory for Vanderbilt Satellite Club, featuring HASP / MOSAIC.",
+  description: "Project directory for Vanderbilt Satellite Team, featuring HASP / MOSAIC.",
 };
 
 export default function ProjectsPage() {
@@ -16,7 +16,7 @@ export default function ProjectsPage() {
         eyebrow="Projects"
         title="Work in"
         accent="progress."
-        description="Engineering projects from Vanderbilt Satellite Club, starting with MOSAIC."
+        description="Engineering projects from Vanderbilt Satellite Team, starting with MOSAIC."
       />
 
       <Section className="border-t border-line pt-8">

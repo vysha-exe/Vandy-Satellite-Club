@@ -8,7 +8,7 @@ import { haspNav, mosaicMeta } from "@/content/hasp/nav";
 export const metadata: Metadata = {
   title: "HASP · MOSAIC",
   description:
-    "MOSAIC — Multisensor Orientation Sensing and Attitude Inference Comparison. Vanderbilt Satellite Club HASP 2027 payload proposal documentation.",
+    "MOSAIC — Multisensor Orientation Sensing and Attitude Inference Comparison. Vanderbilt Satellite Team HASP 2027 payload proposal documentation.",
 };
 
 export default function HaspOverviewPage() {
@@ -20,7 +20,7 @@ export default function HaspOverviewPage() {
       </h1>
       <p className="mt-3 text-lg font-medium text-brand">{mosaicMeta.fullName}</p>
       <p className="mt-5 max-w-3xl text-[1.05rem] leading-relaxed text-muted">
-        A Vanderbilt Satellite Club experiment investigating the reliability of affordable
+        A Vanderbilt Satellite Team experiment investigating the reliability of affordable
         attitude-estimation systems in the stratosphere. MOSAIC combines inertial, magnetic, and
         optical measurements to study how sensor fusion can improve orientation estimates during the
         irregular motion and changing environmental conditions of high-altitude balloon flight.
